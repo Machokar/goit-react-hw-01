@@ -1,4 +1,4 @@
-import { Transitionpart } from './transitionpart';
+import { Transitionpart } from './transition/Transitionpart';
 export const TransactionHistory = ({ transactions }) => {
   return (
     <table className="transaction-history">
