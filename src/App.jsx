@@ -30,21 +30,7 @@ export default function App() {
           <FriendList key={friends.id} friends={friends} />
         ))}
       </div>
-      <div>
-        <thead>
-          <tr>
-            <th>Type</th>
-            <th>Amount</th>
-            <th>Currency</th>
-          </tr>
-        </thead>
-        {transactions.map(transactions => (
-          <TransactionHistory
-            key={transactions.id}
-            transactions={transactions}
-          />
-        ))}
-      </div>
+      <TransactionHistory transactions={transactions} />
     </>
   );
 }

@@ -74,7 +74,7 @@ img {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 133.333% */
+  line-height: 24px;
 }
 .location {
   padding-bottom: 15px;
@@ -83,7 +83,7 @@ img {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 133.333% */
+  line-height: 24px;
 }
 .main-name {
   padding: 20px 0;
@@ -92,7 +92,7 @@ img {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 120% */
+  line-height: 24px;
 }
 .stats {
   display: flex;
@@ -107,4 +107,23 @@ img {
   border-radius: 5%;
   width: 100px;
   height: 100%;
+}
+.transaction-history {
+  width: 500px;
+  margin: 0 auto 200px;
+  margin-top: 100px;
+}
+thead {
+  background-color: #474747;
+  color: #fff;
+}
+td,
+tr,
+th {
+  border: 1px solid #212121;
+  text-align: center;
+}
+thead {
+  background-color: #474747;
+  color: #fff;
 }

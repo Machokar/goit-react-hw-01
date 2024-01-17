@@ -1,14 +1,18 @@
-export const TransactionHistory = ({
-  transactions: { type, amount, currency },
-}) => {
+import { Transitionpart } from './transitionpart';
+export const TransactionHistory = ({ transactions }) => {
   return (
     <table className="transaction-history">
-      <tbody>
+      <thead>
         <tr>
-          <td>{type}</td>
-          <td>{amount}</td>
-          <td>{currency}</td>
+          <th>Type</th>
+          <th>Amount</th>
+          <th>Currency</th>
         </tr>
+      </thead>
+      <tbody>
+        {transactions.map(transaction => (
+          <Transitionpart key={transaction.id} transaction={transaction} />
+        ))}
       </tbody>
     </table>
   );
