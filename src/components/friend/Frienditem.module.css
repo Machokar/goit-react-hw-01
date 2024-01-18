@@ -1,0 +1,14 @@
+.name {
+  margin: 10px 0;
+}
+.friends-model {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 26px;
+}
+.item {
+  border: 1.5px solid black;
+  padding: 15px;
+  border-radius: 5%;
+}

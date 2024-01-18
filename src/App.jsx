@@ -1,9 +1,9 @@
 import './App.css';
-import { FriendList } from './components/FriendList';
-import { Profile } from './components/Profile';
+import { FriendList } from './components/friend/FriendList';
+import { Profile } from './components/profile/Profile';
 import friends from '../friends.json';
 import transactions from '../transactions.json';
-import { TransactionHistory } from './components/TransactionHistory';
+import { TransactionHistory } from './components/transition/TransactionHistory';
 const userData = {
   username: 'Jacques Gluke',
   tag: 'jgluke',
@@ -25,11 +25,7 @@ export default function App() {
         image={userData.avatar}
         stats={userData.stats}
       />
-      <div className="friends-model">
-        {friends.map(friends => (
-          <FriendList key={friends.id} friends={friends} />
-        ))}
-      </div>
+      <FriendList friends={friends} />
       <TransactionHistory transactions={transactions} />
     </>
   );
